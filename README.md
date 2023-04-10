@@ -68,7 +68,7 @@ export const apis: AnyApiFactory[] = [
 ```
 
 
-## packages/app/src/App.tsx 
+## Edite o arquivo packages/app/src/App.tsx 
    
 ### Importa o módulo:
 
