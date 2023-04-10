@@ -72,10 +72,12 @@ export const apis: AnyApiFactory[] = [
    
 ### Importa o módulo:
 
+```sh
 +import { apis, keycloakAuthApiRef } from './apis';
-
+```
 ### Adicione a função:
 
+```sh
 const oauthProvider: SignInProviderConfig = {
   id: 'keycloak',
   title: 'Autenticação',
@@ -96,16 +98,19 @@ const app = createApp({
   
   .
 });
-
+```
 
 ## Instala pacote JWT para decoder do token
 
+```sh
 yarn install jwt-decode
+```
 
 ## Edite o arquivo packages/backend/src/plugins/auth.ts
 
 Aqui esta o arquivo completo
 
+```sh
 import { stringifyEntityRef } from '@backstage/catalog-model';
 import {
   createRouter,
@@ -185,9 +190,11 @@ export default async function createPlugin(
     },
   });
 }
+```
 
 ## Edite o arquivo app-config.yaml
 
+```sh
 app:
   title: Scaffolded Backstage App
   baseUrl: https://fqdn-backstage
@@ -234,7 +241,7 @@ cors:
         clientSecret: "HASH-CLIENT-SECRET"
         authorizationUrl: "https://fqdn.keycloak/auth/realms/RELM-Funcionarios/protocol/openid-connect/auth" ## Versão mais recente remova o "auth" do endpoint
         tokenUrl: "https://fqdn.keycloak/auth/realms/RELM-Funcionarios/protocol/openid-connect/token"  ## Versão mais recente remova o "auth" do endpoint
-        
+```
         
    
 
