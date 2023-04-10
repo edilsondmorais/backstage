@@ -5,7 +5,7 @@
 
 Aqui esta o arquivo completo
 
-```yml
+```sh
 import {
   ScmIntegrationsApi,
   scmIntegrationsApiRef,
