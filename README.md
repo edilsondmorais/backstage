@@ -5,7 +5,7 @@
 
 Aqui esta o arquivo completo
 
-
+```yml
 import {
   ScmIntegrationsApi,
   scmIntegrationsApiRef,
@@ -65,7 +65,7 @@ export const apis: AnyApiFactory[] = [
       }),
     }),
 ];
-
+```
 
 
 ## packages/app/src/App.tsx 
